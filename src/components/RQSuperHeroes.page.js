@@ -2,10 +2,12 @@ import axios from 'axios'
 import {isError, useQuery} from 'react-query'
     
 const fetchSuperHeroes = () => {
-    return axios.get('http://localhost:4000/superheroe')
+    return axios.get('http://localhost:4000/superheroes')
 }
 function RQSuperHeroesPage() {
-   const {isLoading,data,isError,error} = useQuery('super-heroes',fetchSuperHeroes)
+   const {isLoading,data,isError,error} = useQuery('super-heroes',fetchSuperHeroes,{
+      staleTime:30000, // in 30s there is no request comes in network tab in browser. in this case isLoading , isFetching are both false
+   })
     
     if (isLoading) {
         return <h2>Loading...</h2>
