@@ -1,0 +1,29 @@
+{
+    "superheroes":[
+        {
+            "id" : 1,
+            "name":"harun",
+            "alterEgo":"bulk"
+        },
+        {
+            "id" : 2,
+            "name":"kamal",
+            "alterEgo":"jhon deo"
+        },
+        {
+            "id" : 3,
+            "name":"jamal",
+            "alterEgo":"bobenar"
+        },
+        {
+            "id" : 4,
+            "name":"karim",
+            "alterEgo":"shouer tali"
+        },
+        {
+            "id" : 5,
+            "name":"hasan",
+            "alterEgo":"issaton dark"
+        }
+    ]
+}
