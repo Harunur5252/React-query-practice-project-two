@@ -10,7 +10,7 @@ function SuperHeroesPage() {
       setData(res.data)
       setIsLoading(false)
     })
-  }, [])
+  }, []) 
 
   if (isLoading) {
     return <h2>Loading...</h2>
@@ -20,7 +20,7 @@ function SuperHeroesPage() {
     <>
       <h2>Super Heroes Page</h2>
       {data?.map(hero => {
-        return <div>{hero?.name}</div>
+        return <div key={hero?.id}>{hero?.name}</div>
       })}
     </>
   )
